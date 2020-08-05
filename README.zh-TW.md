@@ -85,7 +85,11 @@
 - ["製作一個 Angular 應用程式"](http://blog.mgechev.com/2016/06/26/tree-shaking-angular2-production-build-rollup-javascript/)
 - ["使用 Google Closure Compiler 讓 Angular 程式縮小 2.5 倍"](http://blog.mgechev.com/2016/07/21/even-smaller-angular2-applications-closure-tree-shaking/)
 
-<div style="text-align:right"><a href="#table-of-content">回到目錄</a></div>
+
+
+<p align="right">
+  <a href="#table-of-content">回到目錄</a>
+</p>
 
 <h3 id="minification-and-dead-code-elimination">最小化與刪除無用程式碼</h3>
 
@@ -101,7 +105,11 @@
 - ["Building an Angular Application for Production"](http://blog.mgechev.com/2016/06/26/tree-shaking-angular2-production-build-rollup-javascript/)
 - ["2.5X Smaller Angular Applications with Google Closure Compiler"](http://blog.mgechev.com/2016/07/21/even-smaller-angular2-applications-closure-tree-shaking/)
 
-<div style="text-align:right"><a href="#table-of-content">回到目錄</a></div>
+
+
+<p align="right">
+  <a href="#table-of-content">回到目錄</a>
+</p>
 
 <h3 id="remove-template-whitespace">刪除範本中多餘空白</h3>
 
@@ -111,7 +119,11 @@
 
 - [preserveWhitespaces in the Angular docs](https://angular.io/api/core/Component#preserveWhitespaces)
 
-<div style="text-align:right"><a href="#table-of-content">回到目錄</a></div>
+
+
+<p align="right">
+  <a href="#table-of-content">回到目錄</a>
+</p>
 
 <h3 id="tree-shaking">搖樹最佳化</h3>
 
@@ -152,7 +164,11 @@ console.log(foo());
 - ["使用 Google Closure Compiler 讓 Angular 程式縮小 2.5 倍”](http://blog.mgechev.com/2016/07/21/even-smaller-angular2-applications-closure-tree-shaking/)
 - ["使用 RxJS 運算子"](https://github.com/ReactiveX/rxjs/blob/master/doc/pipeable-operators.md)
 
-<div style="text-align:right"><a href="#table-of-content">回到目錄</a></div>
+
+
+<p align="right">
+  <a href="#table-of-content">回到目錄</a>
+</p>
 
 <h3 id="tree-shakeable-providers">搖樹最佳化的服務提供者</h3>
 
@@ -231,7 +247,11 @@ export class MyService { }
 
 - [Angular 服務提供者](https://angular.io/guide/providers)
 
-<div style="text-align:right"><a href="#table-of-content">回到目錄</a></div>
+
+
+<p align="right">
+  <a href="#table-of-content">回到目錄</a>
+</p>
 
 <h3 id="ahead-of-time-aot-compilation">Ahead-of-Time (AoT) 編譯</h3>
 
@@ -241,7 +261,11 @@ export class MyService { }
 
 - ["Angular Ahead-of-Time 編譯"](http://blog.mgechev.com/2016/08/14/ahead-of-time-compilation-angular-offline-precompilation/)
 
-<div style="text-align:right"><a href="#table-of-content">回到目錄</a></div>
+
+
+<p align="right">
+  <a href="#table-of-content">回到目錄</a>
+</p>
 
 <h3 id="compression">壓縮</h3>
 
@@ -260,13 +284,21 @@ export class MyService { }
 - ["Better than Gzip Compression with Brotli"](https://hacks.mozilla.org/2015/11/better-than-gzip-compression-with-brotli/)
 - ["2.5X Smaller Angular Applications with Google Closure Compiler"](http://blog.mgechev.com/2016/07/21/even-smaller-angular2-applications-closure-tree-shaking/)
 
-<div style="text-align:right"><a href="#table-of-content">回到目錄</a></div>
+
+
+<p align="right">
+  <a href="#table-of-content">回到目錄</a>
+</p>
 
 <h3 id="pre-fetching-resources">資源預先載入</h3>
 
 資源預先載入是提高使用者體驗的好方法。我們可以預先獲取資源（影象、樣式、[延遲載入模組](#lazy-loading-of-resources) 等）或資料。有不同的預先載入策略，但大多數都取決於應用程式的具體情況。
 
-<div style="text-align:right"><a href="#table-of-content">回到目錄</a></div>
+
+
+<p align="right">
+  <a href="#table-of-content">回到目錄</a>
+</p>
 
 <h3 id="lazy-loading-of-resources">資源延遲載入</h3>
 
@@ -279,7 +311,11 @@ export class MyService { }
 - [Webpack](https://github.com/webpack/webpack) - 非同步載入模組
 - [ngx-quicklink](https://github.com/mgechev/ngx-quicklink) - 自動延遲載入螢幕上所有連結所參考的 modules
 
-<div style="text-align:right"><a href="#table-of-content">回到目錄</a></div>
+
+
+<p align="right">
+  <a href="#table-of-content">回到目錄</a>
+</p>
 
 <h3 id="dont-lazy-load-the-default-route">不要延遲載入預設模組</h3>
 
@@ -299,7 +335,11 @@ const routes: Routes = [
 
 請求並執行大量的計算是一種不好的實踐方式，這將大大降低初始路由頁的載入速度。考慮將預設模組宣告為非惰性載入。
 
-<div style="text-align:right"><a href="#table-of-content">回到目錄</a></div>
+
+
+<p align="right">
+  <a href="#table-of-content">回到目錄</a>
+</p>
 
 <h3 id="caching">快取</h3>
 
@@ -307,7 +347,11 @@ const routes: Routes = [
 
 我們通常使用自訂的快取機制，對於靜態資源我們直接使用瀏覽器快取或者 Service Worker ：[CacheStorage API](https://developer.mozilla.org/en-US/docs/Web/API/Cache).
 
-<div style="text-align:right"><a href="#table-of-content">回到目錄</a></div>
+
+
+<p align="right">
+  <a href="#table-of-content">回到目錄</a>
+</p>
 
 <h3 id="use-application-shell">使用程式殼層</h3>
 
@@ -324,7 +368,11 @@ const routes: Routes = [
 
 - ["Instant Loading Web Apps with an Application Shell Architecture"](https://developers.google.com/web/updates/2015/11/app-shell)
 
-<div style="text-align:right"><a href="#table-of-content">回到目錄</a></div>
+
+
+<p align="right">
+  <a href="#table-of-content">回到目錄</a>
+</p>
 
 <h3 id="use-service-workers">使用 Service Workers</h3>
 
@@ -342,7 +390,11 @@ const routes: Routes = [
 
 - ["離線指南"](https://jakearchibald.com/2014/offline-cookbook/)
 - ["開始使用Service Workers"](https://angular.io/guide/service-worker-getting-started)
-<div style="text-align:right"><a href="#table-of-content">回到目錄</a></div>
+
+
+<p align="right">
+  <a href="#table-of-content">回到目錄</a>
+</p>
 
 <h2 id="runtime-optimizations">執行效能最佳化</h2>
 
@@ -361,7 +413,11 @@ if (ENV === 'production') {
   enableProdMode();
 }
 ```
-<div style="text-align:right"><a href="#table-of-content">回到目錄</a></div>
+
+
+<p align="right">
+  <a href="#table-of-content">回到目錄</a>
+</p>
 
 <h3 id="ahead-of-time-compilation">Ahead-of-Time 編譯</h3>
 
@@ -376,7 +432,11 @@ AoT 不僅有助於在Tree-shaking 階段更有效率的打包，而且會提升
 
 - ["Angular 的 Aot"](http://blog.mgechev.com/2016/08/14/ahead-of-time-compilation-angular-offline-precompilation/)
 
-<div style="text-align:right"><a href="#table-of-content">回到目錄</a></div>
+
+
+<p align="right">
+  <a href="#table-of-content">回到目錄</a>
+</p>
 
 <h3 id="web-workers">Web Workers</h3>
 
@@ -393,7 +453,11 @@ AoT 不僅有助於在Tree-shaking 階段更有效率的打包，而且會提升
 
 - ["為更多 APP 使用 Web Workers"](https://www.youtube.com/watch?v=Kz_zKXiNGSE)
 
-<div style="text-align:right"><a href="#table-of-content">回到目錄</a></div>
+
+
+<p align="right">
+  <a href="#table-of-content">回到目錄</a>
+</p>
 
 <h3 id="server-side-rendering">伺服器端渲染</h3>
 
@@ -418,7 +482,11 @@ SPA 有一個大問題：在初始渲染頁面所需的整個 JavaScript 載入�
 - ["Angular 通用模式"](https://www.youtube.com/watch?v=TCj_oC3m6_U)
 - ["透過 Angular & Scully 產生靜態網頁"](https://www.youtube.com/watch?v=ugTx-14jRrI)
 
-<div style="text-align:right"><a href="#table-of-content">回到目錄</a></div>
+
+
+<p align="right">
+  <a href="#table-of-content">回到目錄</a>
+</p>
 
 <h3 id="change-detection">變更偵測</h3>
 
@@ -509,7 +577,11 @@ class PointAnimationComponent {
 
 **警告**: **只有當您確定要做什麼時，才能非常小心地使用這個實踐**，因為如果使用不當，它可能導致 DOM 的狀態不一致而引發錯誤。還要注意，上面的程式碼不會在 Web Worker 中執行。為了使它與 Web Worker 相容，需要使用 Angular 的 `renderer` 設定標籤的值。
 
-<div style="text-align:right"><a href="#table-of-content">回到目錄</a></div>
+
+
+<p align="right">
+  <a href="#table-of-content">回到目錄</a>
+</p>
 
 <h3 id="use-pure-pipes">使用純管道(pure pipe)</h3>
 
@@ -525,7 +597,11 @@ interface PipeMetadata {
 `pure` 標誌表示管道不依賴於任何全域性狀態，不會產生副作用。這意味著當使用相同的輸入呼叫時，管道將返回相同的輸出。透過這種方式，Angular 可以快取管道呼叫時使用的所有輸入引數的輸出，並重用它們，以便不必在每次計算時重新計算它們。
 
 預設值 `pure` 為 `true`
-<div style="text-align:right"><a href="#table-of-content">回到目錄</a></div>
+
+
+<p align="right">
+  <a href="#table-of-content">回到目錄</a>
+</p>
 
 <h3 id="ngfor-directive">`*ngFor` 指令</h3>
 
@@ -582,7 +658,11 @@ export class YtFeedComponent {
 - [Component Dev Kit (CDK) Virtual Scrolling](https://material.angular.io/cdk/scrolling/overview) - API 描述
 - [ngx-virtual-scroller](https://github.com/rintoj/ngx-virtual-scroller) -顯示虛擬"無限"列表
 
-<div style="text-align:right"><a href="#table-of-content">回到目錄</a></div>
+
+
+<p align="right">
+  <a href="#table-of-content">回到目錄</a>
+</p>
 
 <h3 id="optimize-template-expressions">最佳化範本表示式</h3>
 
@@ -595,7 +675,11 @@ Angular 在每次變更偵測週期之後才去計算範本表示式。變更偵
 - [快速計算](https://angular.io/guide/template-syntax#quick-execution) - 範本計算-官方文件
 - [提高效能-不僅僅是一個白日夢](https://youtu.be/I6ZvpdRM1eQ) - ng-conf 相關視訊. 插值表示式中用管道代替函式
 
-<div style="text-align:right"><a href="#table-of-content">回到目錄</a></div>
+
+
+<p align="right">
+  <a href="#table-of-content">回到目錄</a>
+</p>
 
 <h1 id="conclusion">結論</h1>
 
@@ -609,4 +693,8 @@ Angular 在每次變更偵測週期之後才去計算範本表示式。變更偵
 <h1 id="license">協議</h1>
 
 MIT
-<div style="text-align:right"><a href="#table-of-content">回到目錄</a></div>
+
+
+<p align="right">
+  <a href="#table-of-content">回到目錄</a>
+</p>
