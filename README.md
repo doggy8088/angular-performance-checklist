@@ -2,7 +2,8 @@
 
 <img src="./assets/flash.png" width="1000">
 
-- [中文版](./README.zh-CN.md)
+- [簡體中文](./README.zh-CN.md)
+- [繁體中文](./README.zh-TW.md)
 - [Русский](./README.ru-RU.md)
 - [Português](./README.pt-BR.md)
 - [Español](./README.es-ES.md)
@@ -25,20 +26,20 @@ Note that most practices are valid for both HTTP/1.1 and HTTP/2. Practices which
 
 ## Table of Content
 
-- [Angular Performance Checklist](#angular-2-performance-checklist)
+- [Angular Performance Checklist](#angular-performance-checklist)
   - [Introduction](#introduction)
   - [Table of Content](#table-of-content)
   - [Network performance](#network-performance)
     - [Bundling](#bundling)
-    - [Minification and Dead code elimination](#minification-and-dead-code-elimination)
+    - [Minification and dead code elimination](#minification-and-dead-code-elimination)
     - [Remove template whitespace](#remove-template-whitespace)
     - [Tree-shaking](#tree-shaking)
-    - [Tree-shakeable providers](#tree-shakeable-providers)
+    - [Tree-Shakeable Providers](#tree-shakeable-providers)
     - [Ahead-of-Time (AoT) Compilation](#ahead-of-time-aot-compilation)
     - [Compression](#compression)
     - [Pre-fetching Resources](#pre-fetching-resources)
     - [Lazy-Loading of Resources](#lazy-loading-of-resources)
-    - [Don't lazy-load default route](#dont-lazy-load-the-default-route)
+    - [Don't Lazy-Load the Default Route](#dont-lazy-load-the-default-route)
     - [Caching](#caching)
     - [Use Application Shell](#use-application-shell)
     - [Use Service Workers](#use-service-workers)
@@ -58,6 +59,7 @@ Note that most practices are valid for both HTTP/1.1 and HTTP/2. Practices which
     - [Optimize template expressions](#optimize-template-expressions)
 - [Conclusion](#conclusion)
 - [Contributing](#contributing)
+- [License](#license)
 
 ## Network performance
 
