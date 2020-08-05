@@ -2,6 +2,12 @@
 
 <img src="./assets/flash.png" width="1000">
 
+- [簡體中文](./README.zh-CN.md)
+- [繁體中文](./README.zh-TW.md)
+- [Português](./README.pt-BR.md)
+- [Español](./README.es-ES.md)
+- [日本語](./README.ja-JP.md)
+- 
 ## Вступление
 
 В этой статье описаны полезные практики, которые помогут вам улучшить производительность ваших приложений на Angular. "Angular Performance Checklist" покрывает множество вопросов — от server-side pre-rendering и сборки приложений, до производительности в runtime и оптимизации change detection, который выполняется Angular.
@@ -20,8 +26,8 @@
 ## Содержание
 
 - [Angular Performance Checklist](#angular-performance-checklist)
-  - [Вступление](#%D0%B2%D1%81%D1%82%D1%83%D0%BF%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5)
-  - [Содержание](#%D1%81%D0%BE%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D0%BD%D0%B8%D0%B5)
+  - [Вступление](#вступление)
+  - [Содержание](#содержание)
   - [Network performance](#network-performance)
     - [Bundling](#bundling)
     - [Minification and dead code elimination](#minification-and-dead-code-elimination)
@@ -50,7 +56,7 @@
       - [Use `trackBy` option](#use-trackby-option)
       - [Minimize DOM elements](#minimize-dom-elements)
     - [Optimize template expressions](#optimize-template-expressions)
-- [Итоги](#%D0%B8%D1%82%D0%BE%D0%B3%D0%B8)
+- [Итоги](#итоги)
 - [Contributing](#contributing)
 - [License](#license)
 

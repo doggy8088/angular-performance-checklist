@@ -2,11 +2,12 @@
 
 <img src="./assets/flash.png" width="1000">
 
-- [中文版](./README.zh-CN.md)
+- [簡體中文](./README.zh-CN.md)
+- [繁體中文](./README.zh-TW.md)
 - [Русский](./README.ru-RU.md)
-- [Português](./readme-pt-BR.md)
-- [Español](./readme-es-ES.md)
-
+- [Português](./README.pt-BR.md)
+- [日本語](./README.ja-JP.md)
+  
 ## Introducción
 
 Este documento contiene una lista de prácticas las cuales nos ayudarán a aumentar el rendimiento de nuestras aplicaciones Angular. "Angular performance Checklist" cubre diferentes temas - desde server-side pre-rendering y bundle de nuestras aplicaciones, hasta rendimiento en ejecución y optimización de la detección del cambio realizada por el framework.
@@ -24,39 +25,40 @@ Tenga en cuenta que la mayoría de prácticas son válidas para HTTP/1.1 y HTTP/
 
 ## Índice
 
-- [Angular Performance Checklist](#angular-2-performance-checklist)
-  - [Introducción](#Introducción)
-  - [Índice](#Índice)
+- [Angular Performance Checklist](#angular-performance-checklist)
+  - [Introducción](#introducción)
+  - [Índice](#índice)
   - [Rendimiento de red](#rendimiento-de-red)
     - [Bundling](#bundling)
-    - [Minification and Dead code elimination](#minificación-y-eliminación-de-código-no-utilizado-Dead-code)
-    - [Remove template whitespace](#eliminar-espacios-en-blanco-de-las-plantillas)
+    - [Minificación y eliminación de código no utilizado (Dead code)](#minificación-y-eliminación-de-código-no-utilizado-dead-code)
+    - [Eliminar espacios en blanco de las plantillas](#eliminar-espacios-en-blanco-de-las-plantillas)
     - [Tree-shaking](#tree-shaking)
-    - [Tree-shakeable providers](#tree-shakeable-providers)
-    - [Ahead-of-Time (AoT) Compilation](#compilación-Ahead-of-Time-AoT)
-    - [Compression](#compresión)
-    - [Pre-fetching Resources](#precarga-de-recursos-Pre-fetching)
-    - [Lazy-Loading of Resources](#carga-diferida-de-recursos-Lazy-load)
-    - [Don't lazy-load default route](#no-cargar-de-forma-diferida-la-ruta-por-defecto)
-    - [Caching](#caché)
-    - [Use Application Shell](#shell-de-la-aplicación)
-    - [Use Service Workers](#service-workers)
+    - [Tree-Shakeable Providers](#tree-shakeable-providers)
+    - [Compilación Ahead-of-Time (AoT)](#compilación-ahead-of-time-aot)
+    - [Compresión](#compresión)
+    - [Precarga de recursos (Pre-fetching)](#precarga-de-recursos-pre-fetching)
+    - [Carga diferida de recursos (Lazy load)](#carga-diferida-de-recursos-lazy-load)
+    - [No cargar de forma diferida la ruta por defecto](#no-cargar-de-forma-diferida-la-ruta-por-defecto)
+    - [Caché](#caché)
+    - [Shell de la Aplicación](#shell-de-la-aplicación)
+    - [Service Workers](#service-workers)
   - [Optimizaciones en ejecución](#optimizaciones-en-ejecución)
-    - [Utilizar enableProdMode](#enableProdMode)
+    - [Utilizar `enableProdMode`](#utilizar-enableprodmode)
     - [Compilación Ahead-of-Time](#compilación-ahead-of-time)
     - [Web Workers](#web-workers)
     - [Server-Side Rendering](#server-side-rendering)
     - [Detección del cambio](#detección-del-cambio)
-      - [ChangeDetectionStrategy.OnPush](#changedetectionstrategyonpush)
+      - [`ChangeDetectionStrategy.OnPush`](#changedetectionstrategyonpush)
       - [Desacoplando el detector de cambios](#desacoplando-el-detector-de-cambios)
-      - [Ejecución fuera de Angular](#ejecución-fuera-de-Angular)
+      - [Ejecución fuera de Angular](#ejecución-fuera-de-angular)
     - [Pipes puros](#pipes-puros)
-    - [Directiva *ngFor](#directiva-ngFor)
-      - [Utilizar opción trackBy](#utilizar-opción-trackBy)
-      - [Minimizar elementos del DOM](#minimizar-elementos-del-DOM)
-    - [Optimizar expresiones en plantilla](#optimizar-expresiones-en-plantilla-Template-expressions)
+    - [Directiva `*ngFor`](#directiva-ngfor)
+      - [Utilizar opción `trackBy`](#utilizar-opción-trackby)
+      - [Minimizar elementos del DOM](#minimizar-elementos-del-dom)
+    - [Optimizar expresiones en plantilla (Template expressions)](#optimizar-expresiones-en-plantilla-template-expressions)
 - [Conclusión](#conclusión)
 - [Contribuyendo](#contribuyendo)
+- [License](#license)
 
 ## Rendimiento de red
 
