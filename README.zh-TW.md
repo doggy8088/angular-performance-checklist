@@ -2,6 +2,12 @@
 
 <img src="./assets/flash.png" width="1000">
 
+- [簡體中文](./README.zh-CN.md)
+- [Русский](./README.ru-RU.md)
+- [Português](./README.pt-BR.md)
+- [Español](./README.es-ES.md)
+- [日本語](./README.ja-JP.md)
+
 <h2 id="introduction">簡介</h2>
 
 這份清單涵蓋了許多提高 Angular 應用程式效能的最佳實踐。本清單涵蓋了不同的主題，其中包括伺服器端渲染，預先渲染和應用程式封裝，以及執行時期的效能和變更偵測。
