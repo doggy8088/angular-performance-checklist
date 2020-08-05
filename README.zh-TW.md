@@ -73,7 +73,7 @@
 - [Webpack Code Splitting](https://webpack.js.org/guides/code-splitting/) - 將程式碼分割.
 - [Webpack & http2](https://medium.com/webpack/webpack-http-2-7083ec3f3ce6#.46idrz8kb) - 與 http2 分離.
 - [Rollup](https://github.com/rollup/rollup) -利用 ES2015 模組的靜態特性，透過執行有效的搖樹最佳化來進行建構
-- [Google Closure Compiler](https://github.com/google/closure-compiler) - 提供大量最佳化和建構支援. 最初使用 JAVA 進行編寫的, 最近也有一個 [JavaScript 版本](https://www.npmjs.com/package/google-closure-compiler-js) 參見 [這裡](https://www.npmjs.com/package/google-closure-compiler-js).
+- [Google Closure Compiler](https://github.com/google/closure-compiler) - 提供大量最佳化和建構支援. 最初使用 JAVA 進行編寫的, 最近也有一個 [JavaScript 版本](https://www.npmjs.com/package/google-closure-compiler-js)。
 - [SystemJS Builder](https://github.com/systemjs/builder) - 為最小依賴系統模組樹提供單檔案建構
 - [Browserify](http://browserify.org/) （譯者注：brwoser 透過封裝相依性，讓你在瀏覽器具備 `require('modules')` 的能力）
 - [ngx-build-modern](https://github.com/manfredsteyer/ngx-build-plus/tree/master/ngx-build-modern) - Angular-CLI 的外掛， 把應用建構成兩個版本:
@@ -98,7 +98,9 @@
 **工具**
 
 - [Uglify](https://github.com/mishoo/UglifyJS) 程式碼壓縮，如管理變數、刪除註釋和空白、消除死碼等，完全用 javascript 編寫，所有流行的程式碼執行程式（IDE）都有外掛。
-- [Google Closure Compiler](https://github.com/google/closure-compiler) -執行類似於 uglify 型別的程式碼壓縮。在高階模式下，它會積極地轉換程式的 AST ，以便能夠執行更復雜的最佳化. 同樣具有 [JavaScript 版本](https://www.npmjs.com/package/google-closure-compiler-js) 參見 [這裡](https://www.npmjs.com/package/google-closure-compiler-js). GCC 還支援大多數 ES2015 模組語法，因此它可以[Tree-shaking 最佳化]（#Tree-shaking 最佳化）。
+- [Google Closure Compiler](https://github.com/google/closure-compiler) - 提供大量最佳化和建構支援. 最初使用 JAVA 進行編寫的, 最近也有一個 [JavaScript 版本](https://www.npmjs.com/package/google-closure-compiler-js)。
+
+*Note:* [GCC](https://github.com/google/closure-compiler) 尚未支援 `export *`，但這是建構Angular應用程式中重度依賴的語法(`barrel`).
 
 **資源**
 
@@ -154,9 +156,9 @@ console.log(foo());
 
 - [Webpack](https://webpack.js.org) - 透過執行[搖樹最佳化](#tree-shaking)， 一旦應用建構完成, 封裝中不會包含無用程式碼，因此透過 uglify 可以安全地刪除無用程式碼
 - [Rollup](https://github.com/rollup/rollup) - 利用 ES2015 模組的靜態特性，透過執行有效的搖樹最佳化來進行建構
-- [Google Closure Compiler](https://github.com/google/closure-compiler) - 提供大量最佳化和建構支援. 最初使用 JAVA 進行編寫的, 最近也有一個 JavaScript 版本參見[這裡](https://www.npmjs.com/package/google-closure-compiler)
+- [Google Closure Compiler](https://github.com/google/closure-compiler) - 提供大量最佳化和建構支援. 最初使用 JAVA 進行編寫的, 最近也有一個 [JavaScript 版本](https://www.npmjs.com/package/google-closure-compiler-js)。
 
-*Note:* GCC 尚未支援 `export *`，但這是建構Angular應用程式中重度依賴的語法(`barrel`).
+
 
 **資源**
 
@@ -255,7 +257,7 @@ export class MyService { }
 
 <h3 id="ahead-of-time-aot-compilation">Ahead-of-Time (AoT) 編譯</h3>
 
-對於可用的建構工具（如 GCC 、 Rollup 等）來說，用內建的功能去解析 Angular 元件的 HTML-like 範本是一項艱鉅的挑戰。這使得它們的Tree-shaking 效率降低，因為它們不確定範本中參考了哪些指令。AOT 編譯器透過 `ES2015` 模組匯入將 Angular HTML 類別範本傳輸到 JavaScript 或 TypeScript。這樣，我們就能夠在繫結期間有效地進行Tree-shaking ，並刪除由 Angular、或第三方函式庫或是我們自己定義的所有未使用的指令。
+對於可用的建構工具（如 [GCC](https://github.com/google/closure-compiler) 、 [Rollup](https://github.com/rollup/rollup) 等）來說，用內建的功能去解析 Angular 元件的 HTML-like 範本是一項艱鉅的挑戰。這使得它們的Tree-shaking 效率降低，因為它們不確定範本中參考了哪些指令。AOT 編譯器透過 `ES2015` 模組匯入將 Angular HTML 類別範本傳輸到 JavaScript 或 TypeScript。這樣，我們就能夠在繫結期間有效地進行Tree-shaking ，並刪除由 Angular、或第三方函式庫或是我們自己定義的所有未使用的指令。
 
 **資源**
 
